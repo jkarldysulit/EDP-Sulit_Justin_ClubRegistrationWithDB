@@ -21,8 +21,8 @@ namespace Sulit_Justin_RegistrationWithDB
 
         public ClubRegistrationQuery()
         {
-            connectionString = "Server=.\\SQLEXPRESS;Database=ClubDB;Trusted_Connection=True;TrustServerCertificate=True;"; //local connection string for SQL Server Express
-            //connectionString = "Server=ANNEX-PC00;Database=ClubDB;User Id=sulit.411504;Password=123456;TrustServerCertificate=True;"; connection string for school server
+            //connectionString = "Server=.\\SQLEXPRESS;Database=ClubDB;Trusted_Connection=True;TrustServerCertificate=True;"; //local connection string for SQL Server Express sa bahay
+            connectionString = "Server=ANNEX-PC00;Database=SulitClubDB;User Id=sulit.411504;Password=123456;TrustServerCertificate=True;"; //connection string for school server
             sqlConnect = new SqlConnection(connectionString);
             dataTable = new DataTable();
             bindingSource = new BindingSource();
